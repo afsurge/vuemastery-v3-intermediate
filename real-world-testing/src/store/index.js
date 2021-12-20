@@ -3,7 +3,7 @@ import EventService from "@/services/EventService";
 
 const storeConfiguration = {
   state: {
-    user: "Adam Jahr",
+    user: "Abrar Faisal",
     events: [],
     event: null
   },

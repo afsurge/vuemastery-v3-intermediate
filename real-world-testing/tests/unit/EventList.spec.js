@@ -15,21 +15,21 @@ function mountEventList(config = {}) {
   });
 }
 
-// let wrapper;
+let wrapper;
 
 describe("EventList", () => {
-  //   beforeEach(() => {
-  //     wrapper = mountEventList();
-  //   });
+  beforeEach(() => {
+    wrapper = mountEventList();
+  });
 
   it("should render the events", () => {
-    const wrapper = mountEventList();
+    // const wrapper = mountEventList();
     expect(wrapper.exists()).toBeTruthy();
   });
 
   describe("page title", () => {
     it("is rendered with the correct text", () => {
-      const wrapper = mountEventList();
+      // const wrapper = mountEventList();
       const title = wrapper.find("[data-testid=event-list-title]");
       expect(title.exists()).toBeTruthy();
       expect(title.text()).toContain("Events for Good");
@@ -39,7 +39,7 @@ describe("EventList", () => {
   describe("events", () => {
     it("are rendered in a list with necessary information", () => {
       //   const mockEvents = [{ description: "An event", title: "A title", id: 0 }];
-      const wrapper = mountEventList({
+      wrapper = mountEventList({
         plugins: {
           store: {
             state: () => ({
