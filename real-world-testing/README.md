@@ -3,6 +3,7 @@
 1. Getting Started
 2. Setup & Testing like a User
 3. Mocking Vuex Stores
+   (test framework: Setup ⇒ Find ⇒ Interact ⇒ Assert)
 4. Mocking Vuex Stores: Part 2
 
 ## Project setup
