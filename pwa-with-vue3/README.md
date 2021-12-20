@@ -9,7 +9,7 @@
 7. Object Stores with IndexedDB
 8. Saving Data to IndexedDB
 9. Deleting Data from IndexedDB
-10. Next Steps
+10. Next Steps - Nuxt, Capacitor (frameworks)
 
 ## Project setup
 
