@@ -61,7 +61,7 @@ input {
   margin-bottom: 24px;
 }
 
-input[type='text'] {
+input[type="text"] {
   padding: 0px 10px;
 }
 

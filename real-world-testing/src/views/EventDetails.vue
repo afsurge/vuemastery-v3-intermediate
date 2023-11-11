@@ -8,19 +8,19 @@
 
 <script>
 export default {
-  props: ['id'],
+  props: ["id"],
   created() {
-    this.$store.dispatch('fetchEvent', this.id).catch(error => {
+    this.$store.dispatch("fetchEvent", this.id).catch(error => {
       this.$router.push({
-        name: 'ErrorDisplay',
+        name: "ErrorDisplay",
         params: { error: error }
-      })
-    })
+      });
+    });
   },
   computed: {
     event() {
-      return this.$store.state.event
+      return this.$store.state.event;
     }
   }
-}
+};
 </script>

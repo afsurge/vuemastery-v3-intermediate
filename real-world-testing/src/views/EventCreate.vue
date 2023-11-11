@@ -44,31 +44,31 @@
 </template>
 
 <script>
-import { v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from "uuid";
 
 export default {
   data() {
     return {
       categories: [
-        'sustainability',
-        'nature',
-        'animal welfare',
-        'housing',
-        'education',
-        'food',
-        'community'
+        "sustainability",
+        "nature",
+        "animal welfare",
+        "housing",
+        "education",
+        "food",
+        "community"
       ],
       event: {
-        id: '',
-        category: '',
-        title: '',
-        description: '',
-        location: '',
-        date: '',
-        time: '',
-        organizer: ''
+        id: "",
+        category: "",
+        title: "",
+        description: "",
+        location: "",
+        date: "",
+        time: "",
+        organizer: ""
       }
-    }
+    };
   },
   methods: {
     onSubmit() {
@@ -76,22 +76,22 @@ export default {
         ...this.event,
         id: uuidv4(),
         organizer: this.$store.state.user
-      }
+      };
       this.$store
-        .dispatch('createEvent', event)
+        .dispatch("createEvent", event)
         .then(() => {
           this.$router.push({
-            name: 'EventDetails',
+            name: "EventDetails",
             params: { id: event.id }
-          })
+          });
         })
         .catch(error => {
           this.$router.push({
-            name: 'ErrorDisplay',
+            name: "ErrorDisplay",
             params: { error: error }
-          })
-        })
+          });
+        });
     }
   }
-}
+};
 </script>
